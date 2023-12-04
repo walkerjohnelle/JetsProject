@@ -1,6 +1,6 @@
 package com.skilldistillery.jets;
 
-public class CargoPlane extends Jet {
+public class CargoPlane extends Jet implements CargoCarrier {
 
 	private double cargoCapacityInLbs;
 	private double actualCargoWeightInLbs;
@@ -29,8 +29,20 @@ public class CargoPlane extends Jet {
 		return actualCargoWeightInLbs;
 	}
 
-	public void setActualCargoWeightInLbs(double actualCargoWeightInLbs) {
+	public void setActualCargoWeightInLbs(double actualCargoWeightInLbs) throws Exception {
+
+		if (actualCargoWeightInLbs > cargoCapacityInLbs) {
+			throw new Exception("Cargo weight exceeds capacity.");
+		}
 		this.actualCargoWeightInLbs = actualCargoWeightInLbs;
+
+	}
+
+	@Override
+	public void loadCargo() {
+		System.out.println("Cargo loading..." + "\n" + actualCargoWeightInLbs + " lbs of cargo loaded.");
+		System.out.println(
+				"  |\n" + "        ___/\"\\___\n" + "__________/ o \\__________\n" + "   *   *  \\___/  *   *");
 	}
 
 	@Override
@@ -47,4 +59,5 @@ public class CargoPlane extends Jet {
 				+ getRange() + "\nPurchase Price: $" + getPurchasePrice() + "\nCargo Capactity: " + cargoCapacityInLbs
 				+ "lbs" + "\nActual Cargo Weight: " + actualCargoWeightInLbs + "lbs";
 	}
+
 }
