@@ -44,7 +44,7 @@ public class PassengerJet extends Jet {
 	public String toString() {
 		return "Passenger Jet Information\nModel: " + getModel() + "\nSpeed In Mph: " + getSpeedInMph() + "\nRange: "
 				+ getRange() + "\nPurchase Price: $" + getPurchasePrice() + "\nPassenger Capacity: " + passengerCapacity
-				+ "\nTotal Passengers: " + totalPassengers;
+				+ "\nTotal Passengers: " + totalPassengers + "\n";
 	}
 
 }

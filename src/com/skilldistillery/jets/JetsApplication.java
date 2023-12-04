@@ -145,7 +145,6 @@ public class JetsApplication {
 	}
 
 	private void addCargoJet() {
-		airfield.addJets(new CargoPlane());
 		System.out.print("Enter cargo jet model: ");
 		String model = sc.nextLine();
 		System.out.print("Enter cargo jet speed (mph): ");
@@ -170,7 +169,6 @@ public class JetsApplication {
 	}
 
 	private void addPassengerJet() {
-		airfield.addJets(new PassengerJet());
 		System.out.print("Enter passenger jet model: ");
 		String model = sc.nextLine();
 		System.out.print("Enter passenger jet speed (mph): ");
@@ -195,7 +193,6 @@ public class JetsApplication {
 	}
 
 	private void addFighterJet() {
-		airfield.addJets(new FighterJet());
 		System.out.print("Enter fighter jet model: ");
 		String model = sc.nextLine();
 		System.out.print("Enter fighter jet speed (mph): ");

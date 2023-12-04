@@ -55,9 +55,9 @@ public class CargoPlane extends Jet implements CargoCarrier {
 
 	@Override
 	public String toString() {
-		return "Fighter Jet Information\nModel: " + getModel() + "\nSpeed In Mph: " + getSpeedInMph() + "\nRange: "
+		return "Cargo Jet Information\nModel: " + getModel() + "\nSpeed In Mph: " + getSpeedInMph() + "\nRange: "
 				+ getRange() + "\nPurchase Price: $" + getPurchasePrice() + "\nCargo Capactity: " + cargoCapacityInLbs
-				+ "lbs" + "\nActual Cargo Weight: " + actualCargoWeightInLbs + "lbs";
+				+ "lbs" + "\nActual Cargo Weight: " + actualCargoWeightInLbs + "lbs\n";
 	}
 
 }

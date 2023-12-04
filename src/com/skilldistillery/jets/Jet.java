@@ -56,7 +56,7 @@ public abstract class Jet {
 	@Override
 	public String toString() {
 		return "Jet Information\nModel: " + model + "\nSpeed In MPG: " + speedInMph + " MPH" + "\nRange: " + range
-				+ "\nPurchase Price: $" + purchasePrice;
+				+ "\nPurchase Price: $" + purchasePrice + "\n";
 	}
 
 }
